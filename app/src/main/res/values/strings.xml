@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusLocationTracker</string>
+    <string name="title_activity_maps">BusTrackingSystem</string>
+    <string name="GetLocation">GetLocation</string>
+    <string name="LocationDisplay">Diplaying Location</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+</resources>
