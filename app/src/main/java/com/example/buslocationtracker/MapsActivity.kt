@@ -43,6 +43,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         latLng = LatLng(-34.0, 151.0)
 
+
     }
 
     /**
@@ -61,14 +62,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val sydney = LatLng(-34.0, 151.0)
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-
-
 //implementing Location Listner *****************************************************
         locationListener= object: LocationListener{
             override fun onLocationChanged(location: Location?) {
-
-
-
                 // Add a marker to over new location****************************************
                 try {
                     latLng = LatLng(location!!.latitude, location!!.longitude)
@@ -143,9 +139,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             e.printStackTrace()
 
         }
-        mMap.addMarker(MarkerOptions().position(latLng).title(country.toString()+" "+city.toString()+" "+ state.toString()))
+        mMap.addMarker(MarkerOptions().position(latLng).title("maker"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng))
-        textView.setText("${country.toString()} :${city.toString()} :${ state.toString()}")
+        textView.setText("")
     }
 
 

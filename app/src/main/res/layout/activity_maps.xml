@@ -46,17 +46,18 @@
 
         android:layout_marginTop="400dp"
         android:layout_marginStart="300dp"
-        android:text="@string/latitude"/>
+        android:hint="latitude"
+       />
     <EditText
         android:id="@+id/editText3"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-
+android:hint="longitude"
         android:layout_marginTop="450dp"
         android:layout_marginStart="300dp"
-        android:text="@string/longitude"/>
+       />
 
 
 </FrameLayout>
